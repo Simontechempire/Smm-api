@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SIMON SMM Services</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+  <h2>SIMON SMM</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<nav>
+  <a href="/dashboard.html">Dashboard</a>
+  <a href="/services.html">Services</a>
+  <a href="/orders.html">Orders</a>
+  <a href="/settings.html">Settings</a>
+</nav>
+
+<main class="container">
+  <h1>Service Management</h1>
+
+  <section class="panel">
+    <h2>Add Service</h2>
+    <form id="serviceForm">
+      <input name="name" placeholder="Service name" required>
+      <input name="category" placeholder="Category" required>
+      <input name="platform" placeholder="Platform" required>
+      <textarea name="description" placeholder="Description" required></textarea>
+      <button type="submit">Add Service</button>
+    </form>
+  </section>
+
+  <section class="panel">
+    <h2>My Services</h2>
+    <div id="serviceList">Loading...</div>
+  </section>
+</main>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
