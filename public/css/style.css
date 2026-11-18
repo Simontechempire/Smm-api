@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1020;
+  color: #edf2ff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 18px 5%;
+  background: #111a30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #263653;
+}
+
+header h2 {
+  color: #65a9ff;
+  letter-spacing: 1px;
+}
+
+nav {
+  padding: 15px 5%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: #121b30;
+}
+
+nav a, a {
+  color: #79b7ff;
+  text-decoration: none;
+}
+
+nav a:hover, a:hover {
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 25px;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 15px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.stats article, .panel {
+  background: #141e34;
+  border: 1px solid #273956;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.stats article span {
+  display: block;
+  color: #9aaac4;
+  margin-bottom: 12px;
+}
+
+.stats strong {
+  font-size: 28px;
+  color: #68b1ff;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 13px;
+  margin: 9px 0 16px;
+  background: #0b1426;
+  color: white;
+  border: 1px solid #304563;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+label {
+  display: block;
+  color: #aebed7;
+}
+
+button {
+  padding: 12px 18px;
+  background: #287ce0;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1763bd;
+}
+
+button.danger {
+  background: #a52d42;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.item {
+  padding: 15px 0;
+  border-bottom: 1px solid #30405b;
+  overflow-wrap: anywhere;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 5px;
+  background: #1e385b;
+  color: #8ec4ff;
+  font-size: 12px;
+}
+
+.login {
+  max-width: 420px;
+  margin: 12vh auto;
+  padding: 30px;
+  background: #141e34;
+  border: 1px solid #304563;
+  border-radius: 15px;
+}
+
+.login button {
+  width: 100%;
+}
+
+.login p {
+  color: #9aaac4;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #287ce0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: #9bd6a5;
+}
+
+@media(max-width:600px) {
+  .container {
+    padding: 15px;
+  }
+
+  nav {
+    gap: 13px;
+  }
+  }
