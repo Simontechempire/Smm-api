@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SIMON SMM Settings</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+  <h2>SIMON SMM</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<nav>
+  <a href="/dashboard.html">Dashboard</a>
+  <a href="/services.html">Services</a>
+  <a href="/orders.html">Orders</a>
+  <a href="/settings.html">Settings</a>
+</nav>
+
+<main class="container">
+  <h1>Settings</h1>
+
+  <section class="panel">
+    <form id="settingsForm">
+      <label>Application Name</label>
+      <input name="appName" required>
+
+      <label>Owner Name</label>
+      <input name="ownerName" required>
+
+      <button type="submit">Save Settings</button>
+    </form>
+  </section>
+
+  <section class="panel">
+    <h2>API Documentation</h2>
+    <p>API documentation and available endpoints.</p>
+    <a href="/api/docs" target="_blank">Open API documentation</a>
+  </section>
+
+  <section class="panel">
+    <h2>Security</h2>
+    <p>Your dashboard uses an owner token. Never share it.</p>
+    <button onclick="logout()">End Owner Session</button>
+  </section>
+</main>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
